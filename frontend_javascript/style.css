@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+    margin: 0
+}
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+.wrapper {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+.toolbar {
+    width: 100%;
+    background-color:#3F51B5 ;
+    padding: 16px 0px 16px 0px
+}
+
+.toolbar H1 {
+    display: inline;
+    margin: 0px;
+    color:#ffffff;
+    margin-left: 16px;
+}
+#main_title {
+    margin-left: 16px;
+}
+.content {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card {
+    width: 80%;
+    max-width: 700px;
+    margin: 1em auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.card .status {
+    text-align: right;
+}
+
+.card_btn {
+    display: inline;
+    border: 2px solid #AB47BC;
+    background-color: transparent;
+    color: #AB47BC;
+    padding: 16px;
+    font-size: 16px;
+}
+.card_btn:hover {
+    border: 2px solid #CE93D8;
+    color: #CE93D8;
+}
+.card_btn:active {
+    border: 2px solid #AB47BC;
+    color: #AB47BC;
+}
+
+.input-group {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.input-group .input-area {
+    outline: none;
+    border: 2px solid #dadce0;
+    padding: 16px 13px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.input-group .input-area:valid + .label {
+    top: -8px;
+    padding: 0 3px;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.input-group .input-area:focus {
+    border: 2px solid #AB47BC;
+}
+
+.input-group .label {
+    color: #8d8d8d;
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    background: #ffffff;
+}
+
+.input-group .input-area:focus + .label {
+    top: -8px;
+    padding: 0 3px;
+    font-size: 14px;
+    color: #AB47BC;
+}
+
+.select_task_status {
+    width: 530px;
+    margin-top: 32px;
+    padding: 8px;
+    border: 2px solid #dadce0
+}
+
+.select_task_status:focus {
+    border: 2px solid #AB47BC
+}
+
+.btn {
+    position: relative;
+  
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    
+    background-color: #AB47BC;
+    color: #ecf0f1;
+    
+    transition: background-color .3s;
+  }
+  
+  .btn:hover {
+    background-color: #F06292;
+  }
+  
+  .btn > * {
+    position: relative;
+  }
+  
+  .btn span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .btn:before {
+    content: "";
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    display: block;
+    width: 0;
+    padding-top: 0;
+      
+    border-radius: 100%;
+    
+    background-color: rgba(236, 240, 241, .3);
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+    
+    transition: width .2s ease-out, padding-top .2s ease-out;
+  }
+
+  @media screen and (max-width: 650px) {
+
+    .select_task_status {
+        width: 68%;
+    }
+
+    .input-group .input-area {
+        width: 90%;
+    }
+  }

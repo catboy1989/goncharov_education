@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrapper">
+  <div class="toolbar">
+      <H1 id="arrow">&lArr;</H1>
+      <H1 id="main_title">Добавить задачу</H1>
+  </div>
+  <div class="content">
+    <div class="input-group">
+      <textarea id="task_title" class="input-area" name="search" rows="3" cols="30"></textarea>
+      <label for="inputField" class="label">Название задачи</label>
+    </div>
+    <div class="input-group">
+      <textarea id="task_text" class="input-area" name="search" rows="5" cols="30"></textarea>
+      <label for="inputField" class="label">Текст задачи</label>
+    </div>
+    <Br>
+    <select name="status" id="task-status" class="select_task_status">
+      <option value="add">Задача добавлена</option>
+      <option value="update">Задача обновлена</option>
+      <option value="send">Задача отправлена на проверку</option>
+      <option value="rework">Задача отправлена на доработку</option>
+      <option value="complete">Задача выполнена</option>
+    </select>
+    <BR>
+    <button class="btn" type="button"><span>Сохранить задачу</span></button>
+  </div>
+</div>
+</body>
+</html>
